@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #e6f7ff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      header {
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        width: 100%;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+      }
+
+      .button-group {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      button {
+        background-color: #2980b9;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+
+      textarea {
+        background-color: #e6f7ff;
+        border: none;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer {
+        background-color: #2980b9;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+      }
+    </style>
+    <script>
+      let chances = 0;
+      const answer = [
+        "Are you sure my love",
+        "You don't want to rethink again",
+        "Maybe you are just shy to say yes",
+        "I can't believe this",
+        "Give me a chance, please",
+        "I I I will treat you very good I promise",
+        "How about let me treat you some good food",
+        "Let's give me one more chance",
+        "I will give me the most unimaginable valentine I promise",
+        "Don't press no anymore please press yes",
+        "Give me a try please",
+        "One last chance for real",
+        "How dare you still pressing no",
+        "Holy mother fucking god really",
+      ];
+
+      function changeNoInput() {
+        document.getElementById("answer").value =
+          answer[chances] || "I cannot believe this, I so sad";
+        chances++;
+      }
+
+      function changeYesInput() {
+        document.getElementById("answer").value =
+          "HEHEHEHE, I hepi, let's celebrate together my BAOBAO in GENTING";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Happy Valentine's Day &#10084; &#65039;</h1>
+    </header>
+    <main>
+      <p>Would you be my valentine's my wifey</p>
+      <div class="button-group">
+        <button onclick="changeYesInput()">YES</button>
+        <button onclick="changeNoInput()">no</button>
+      </div>
+      <textarea id="answer"></textarea>
+    </main>
+    <footer>
+      <p>&copy; KEN &#10084; EMILY</p>
+    </footer>
+  </body>
+</html>
